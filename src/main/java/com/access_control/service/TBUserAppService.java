@@ -304,7 +304,7 @@ public class TBUserAppService
     }
 
     private long idExistInTBUsrAccess( long idUsrAccess ) {
-        sqp2 = em.createNamedStoredProcedureQuery( "existIDUsrAccess" );
+        sqp2 = em.createNamedStoredProcedureQuery( "UsersApps_UsrAccess" );
 
         sqp2.setParameter( "pmtUsrAccess", idUsrAccess );
         sqp2.setParameter( "pmtOperation", "ID" );
